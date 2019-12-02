@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block title %}Articles - My Flask App{% endblock %}
+{% block body %}
+
+   {% for article in articles %}
+   <ul class="list-group">
+       <li class="list-group-item"><a href="/article/{{article.id}}">{{article.title}}</a></li>
+   </ul>
+   {% endfor %}
+
+{% endblock %}

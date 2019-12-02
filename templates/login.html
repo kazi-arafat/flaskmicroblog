@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}Sign In - My Flask App{% endblock %}
+
+{% block body %}
+    <h1>Sign In</h1>
+    <form action="" method="POST">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" name="username" placeholder="Username" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" name="password" placeholder="Password" required>
+        </div>
+        <button class="btn btn-success" type="submit" id="signin">Sign In</button>
+    </form>
+
+{% endblock %}

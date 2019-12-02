@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}Article_{{article.id}} - My Flask App{% endblock %}
+
+{% block body %}
+
+    <h1>{{article.title}}</h1>
+    <small>Written by {{article.author}} on {{article.create_date}}</small>
+    <hr>
+    <div>
+            {{article.body | safe}}
+    </div>
+    
+
+
+{% endblock %}
